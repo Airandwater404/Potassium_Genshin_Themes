@@ -1,6 +1,6 @@
 # Genshin Impact themes for Potassium
 
-Five animated Genshin Impact themes for the Potassium executor. Each one has its own colour palette, its own layout and its own Japanese labels, with a looping wallpaper playing behind the whole app.
+Seven animated Genshin Impact themes for the Potassium executor. Each one has its own colour palette, its own layout and its own Japanese labels, with a looping wallpaper playing behind the whole app.
 
 | Theme | Base theme | Look |
 |---|---|---|
@@ -9,6 +9,8 @@ Five animated Genshin Impact themes for the Potassium executor. Each one has its
 | [Moontide Sea](#moontide-sea--月潮の海) | Dark | Deep-sea glass, glowing floating panels, gradient heading |
 | [Bride Furina](#bride-furina--フリーナ) | **Light** | Frosted veil, serif type, centred tabs, double borders |
 | [Sea of Flowers](#sea-of-flowers--花の海) | Dark | Minimal starfall, monospace labels, shooting-star tab underline |
+| [Raiden Shogun](#raiden-shogun--雷電将軍) | Dark | Electric violet, portrait on the right fading into storm purple, slanted tabs, glowing seam |
+| [Clorinde](#clorinde--クロリンデ) | Dark | Fontaine duelist, midnight teal and brass gold, art-deco frame, diamond markers |
 
 ## Install
 
@@ -47,17 +49,34 @@ Five animated Genshin Impact themes for the Potassium executor. Each one has its
 
 [`Theme.css`](sea-of-flowers/Theme.css) · Base: Dark · 花海 · 花束 · 流れ星に願いを
 
+## Raiden Shogun · 雷電将軍
+
+![Raiden Shogun theme](raiden/screenshot.jpg)
+
+[`Theme.css`](raiden/Theme.css) · Base: Dark · 稲妻幕府 · 勅令 · 一心浄土
+
+The source GIF is square, so instead of stretching it across the window this theme pins it to the right at full height and fades it into purple on the left. The preview above is a narrow window; on a wide one the left side is solid storm purple.
+
+## Clorinde · クロリンデ
+
+![Clorinde theme](clorinde/screenshot.jpg)
+
+[`Theme.css`](clorinde/Theme.css) · Base: Dark · 決闘代理人 · 依頼書 · 審判の銃声
+
 ## Notes
 
-- Wallpapers are animated AVIF files (1920×1080, 30 fps, 0.9 to 4 MB) loaded from this repo, so you need internet the first time. If a wallpaper can't load, the colours still apply.
+- Wallpapers are animated AVIF files (0.3 to 4 MB) loaded from this repo, so you need internet the first time. If a wallpaper can't load, the colours still apply.
 - Potassium cuts custom CSS off at 50,000 characters. Each theme is about 6,000, so there's room for your own tweaks.
 - The layouts target Potassium's internal class names. A future Potassium update could rename them; if that happens, the colours keep working but some layout touches may not.
 
 ## Credits
 
-Genshin Impact and its characters belong to HoYoverse. The wallpapers are converted from live wallpapers posted on [MoeWalls](https://moewalls.com):
+Genshin Impact and its characters belong to HoYoverse. The first five wallpapers are converted from live wallpapers posted on [MoeWalls](https://moewalls.com):
 [Yae Miko Sakura Cherry Blossoms](https://moewalls.com/anime/yae-miko-sakura-cherry-blossoms-genshin-impact-live-wallpaper/),
 [Kujou Sara Ronin](https://moewalls.com/anime/kujou-sara-ronin-genshin-impact-live-wallpaper/),
 [Moontide Sea](https://moewalls.com/anime/moontide-sea-genshin-impact-live-wallpaper/),
 [Bride Furina](https://moewalls.com/anime/bride-furina-genshin-impact-live-wallpaper/) and
 [Sea of Flowers](https://moewalls.com/anime/sea-of-flowers-genshin-impact-live-wallpaper/).
+
+The Raiden Shogun and Clorinde wallpapers are converted from GIFs on [KLIPY](https://klipy.com):
+[Raiden](https://klipy.com/gifs/raiden-51) and [Clorinde](https://klipy.com/gifs/clorinde-3). The Raiden GIF keeps its creator's watermark in the top-right corner.

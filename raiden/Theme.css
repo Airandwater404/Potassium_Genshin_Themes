@@ -1,0 +1,178 @@
+/* Raiden Shogun theme for Potassium. Base theme: Dark. */
+:root[data-theme] {
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  --bg-app: transparent;
+  --bg-chrome: rgba(14, 8, 36, 0.55);
+  --bg-sidebar: rgba(16, 9, 40, 0.62);
+  --bg-editor: rgba(18, 10, 43, 0.42);
+  --bg-panel: rgba(14, 8, 36, 0.62);
+  --bg-status: rgba(12, 6, 30, 0.7);
+  --bg-elevated: rgba(28, 16, 64, 0.95);
+  --bg-input: rgba(10, 5, 28, 0.55);
+  --bg-hover: rgba(182, 156, 255, 0.12);
+  --bg-active: rgba(182, 156, 255, 0.22);
+  --border: rgba(182, 156, 255, 0.16);
+  --border-strong: rgba(182, 156, 255, 0.34);
+
+  --text: #f1ecff;
+  --text-muted: #c6b8f2;
+  --text-faint: #8676bd;
+  --row-icon: #c9b6ff;
+
+  --accent: #b69cff;
+  --accent-hover: #cbb8ff;
+  --accent-soft: rgba(182, 156, 255, 0.2);
+  --on-accent: #1a0d3d;
+  --tab-accent: #c9b6ff;
+  --tab-rule: transparent;
+  --tab-glyph: #d9ccff;
+  --tab-divider-width: 0px;
+  --tab-active-bg: transparent;
+
+  --ok: #8be9c0;
+  --warn: #ffd76e;
+  --danger: #ff6b9a;
+  --titlebar-fg: #e6dcff;
+  --titlebar-close-hover: #8b3dd9;
+  --scrollbar-thumb: rgba(182, 156, 255, 0.3);
+}
+
+/* Settings opens over everything; keep it readable over the moving wallpaper. */
+:root[data-theme] .settings-dialog {
+  background-color: rgba(18, 10, 43, 0.9) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  backdrop-filter: blur(24px) saturate(1.2);
+}
+
+:root[data-theme] .settings-dialog .settings {
+  background-color: transparent !important;
+}
+
+/* Monaco paints its own solid background; let the wallpaper through. */
+.monaco-editor,
+.monaco-editor .overflow-guard,
+.monaco-editor-background,
+.monaco-editor .margin,
+.monaco-editor .inputarea.ime-input {
+  background-color: transparent !important;
+}
+
+.monaco-editor .view-overlays .current-line,
+.monaco-editor .margin-view-overlays .current-line-margin {
+  background: rgba(182, 156, 255, 0.08) !important;
+  border: none !important;
+}
+
+.monaco-editor .line-numbers { color: #7565b0 !important; }
+.monaco-editor .line-numbers.active-line-number { color: #c9b6ff !important; }
+.monaco-editor .view-lines { text-shadow: 0 1px 3px rgba(8, 3, 22, 0.9); }
+.monaco-editor .scroll-decoration { box-shadow: none !important; }
+
+/* The minimap is a canvas with a solid fill; blending drops it into the wallpaper. */
+.monaco-editor .minimap,
+.monaco-editor .minimap canvas {
+  mix-blend-mode: screen !important;
+}
+
+.monaco-editor .minimap { opacity: 0.55 !important; }
+.monaco-editor .minimap-shadow-visible { box-shadow: none !important; }
+
+/* Japanese labels next to the English ones. */
+:root[data-theme] .titlebar-title { font-size: 0 !important; }
+:root[data-theme] .titlebar-title::after {
+  content: "稲妻幕府 · カリウム";
+  font-size: 13px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.28em;
+}
+
+:root[data-theme] .sidebar .head-title { font-size: 0 !important; }
+:root[data-theme] .sidebar .head-title::after {
+  content: "勅令";
+  font-size: 14px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.08em;
+}
+
+:root[data-theme] .sidebar .section:has(+ .section) .section-title::after { content: " · スクリプト"; letter-spacing: 0.04em; }
+:root[data-theme] .sidebar .section + .section .section-title::after { content: " · 自動実行"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(1)::after { content: "　出力"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(2)::after { content: "　問題"; letter-spacing: 0.04em; }
+
+:root[data-theme] .start .hero h1 { font-size: 0 !important; line-height: 1 !important; }
+:root[data-theme] .start .hero h1::before {
+  content: "RAIDEN SHOGUN · 永遠の神";
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  color: var(--accent);
+}
+
+:root[data-theme] .start .hero h1::after {
+  content: "雷電将軍";
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+:root[data-theme] .start .links h2::after { content: "　始める"; }
+:root[data-theme] .start .recent h2::after { content: "　最近"; }
+:root[data-theme] .start .tip h2::after { content: "　今日のヒント"; }
+
+/* A vertical line of text at the foot of the explorer. */
+:root[data-theme] .sidebar { position: relative; isolation: isolate; }
+:root[data-theme] .sidebar::after {
+  content: "一心浄土";
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  writing-mode: vertical-rl;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  color: rgba(201, 182, 255, 0.45);
+  pointer-events: none;
+}
+
+/* Slanted tabs, like a blade cut. */
+:root[data-theme] .tab-bar { box-shadow: inset 0 -1px 0 rgba(182, 156, 255, 0.2); }
+:root[data-theme] .tab-bar .strip { gap: 2px; padding-left: 4px; }
+:root[data-theme] .tab-bar .strip .tab {
+  padding: 0 18px 0 20px;
+  background-image: none;
+  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+:root[data-theme] .tab-bar .strip .tab::before,
+:root[data-theme] .tab-bar .strip .tab::after { display: none; }
+:root[data-theme] .tab-bar .strip .tab.is-active {
+  background-color: rgba(182, 156, 255, 0.24);
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(201, 182, 255, 0.8);
+}
+
+/* An electric seam between the explorer and the editor. */
+:root[data-theme] .splitter-x {
+  background-color: #b69cff !important;
+  box-shadow: 0 0 8px rgba(182, 156, 255, 0.9), 0 0 18px rgba(140, 90, 255, 0.5);
+}
+
+:root[data-theme] .status { background-image: linear-gradient(90deg, rgba(120, 70, 220, 0.35), transparent 60%); }
+:root[data-theme] .chip-button.is-accent { box-shadow: 0 0 12px rgba(182, 156, 255, 0.55); }
+
+:root[data-theme] .start .hero h1::after {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(201, 182, 255, 0.9), 0 0 28px rgba(140, 90, 255, 0.7);
+}
+
+/* Animated wallpaper behind the whole app. */
+html, body {
+  background: linear-gradient(90deg, #120a2b 0%, #120a2b 36%, rgba(18, 10, 43, 0.6) 50%, rgba(18, 10, 43, 0) 66%), url("https://raw.githubusercontent.com/Airandwater404/Potassium_Genshin_Themes/main/raiden/raiden.avif") right center / contain no-repeat, linear-gradient(160deg, #1d1042, #0b061c) !important;
+}
