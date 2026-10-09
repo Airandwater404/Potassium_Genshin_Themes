@@ -23,11 +23,11 @@ Previews are animated (AVIF) and show the Start page and a script tab side by si
 
 ## Loading screen
 
-Every theme also replaces Potassium's own loading and login picture with its wallpaper, softly blurred, so the theme starts the moment the app opens. The last tile is Potassium's default for comparison.
+Every theme also replaces Potassium's own loading and login picture with its wallpaper, softly blurred, so the theme starts the moment the app opens.
 
 <picture>
-  <source srcset="loading.avif" type="image/avif">
-  <img src="loading.jpg" alt="Loading screens of all seven themes">
+  <source srcset="loading-screens.avif" type="image/avif">
+  <img src="loading-screens.jpg" alt="Loading screens of all seven themes">
 </picture>
 
 ## Labels in every theme
@@ -48,8 +48,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Yae Miko · 八重神子
 
 <picture>
-  <source srcset="yae-miko/preview.avif" type="image/avif">
-  <img src="yae-miko/screenshot.jpg" alt="Yae Miko theme">
+  <source srcset="yae-miko/window.avif" type="image/avif">
+  <img src="yae-miko/window.jpg" alt="Yae Miko theme">
 </picture>
 
 [`Theme.css`](yae-miko/Theme.css) · Base: Dark · 鳴神大社 · 巻物 · 桜花爛漫
@@ -70,8 +70,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Kujou Sara · 九条裟羅
 
 <picture>
-  <source srcset="kujou-sara/preview.avif" type="image/avif">
-  <img src="kujou-sara/screenshot.jpg" alt="Kujou Sara theme">
+  <source srcset="kujou-sara/window.avif" type="image/avif">
+  <img src="kujou-sara/window.jpg" alt="Kujou Sara theme">
 </picture>
 
 [`Theme.css`](kujou-sara/Theme.css) · Base: **Light** · 天領奉行 · 軍令 · 雷光一閃
@@ -93,8 +93,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Moontide Sea · 月潮の海
 
 <picture>
-  <source srcset="moontide/preview.avif" type="image/avif">
-  <img src="moontide/screenshot.jpg" alt="Moontide Sea theme">
+  <source srcset="moontide/window.avif" type="image/avif">
+  <img src="moontide/window.jpg" alt="Moontide Sea theme">
 </picture>
 
 [`Theme.css`](moontide/Theme.css) · Base: Dark · 月潮 · 潮流 · 静かなる潮騒
@@ -114,8 +114,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Bride Furina · フリーナ
 
 <picture>
-  <source srcset="furina/preview.avif" type="image/avif">
-  <img src="furina/screenshot.jpg" alt="Bride Furina theme">
+  <source srcset="furina/window.avif" type="image/avif">
+  <img src="furina/window.jpg" alt="Bride Furina theme">
 </picture>
 
 [`Theme.css`](furina/Theme.css) · Base: **Light** · 水の花嫁 · 台本 · 正義の舞台
@@ -136,8 +136,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Sea of Flowers · 花の海
 
 <picture>
-  <source srcset="sea-of-flowers/preview.avif" type="image/avif">
-  <img src="sea-of-flowers/screenshot.jpg" alt="Sea of Flowers theme">
+  <source srcset="sea-of-flowers/window.avif" type="image/avif">
+  <img src="sea-of-flowers/window.jpg" alt="Sea of Flowers theme">
 </picture>
 
 [`Theme.css`](sea-of-flowers/Theme.css) · Base: Dark · 花海 · 花束 · 流れ星に願いを
@@ -157,8 +157,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Raiden Shogun · 雷電将軍
 
 <picture>
-  <source srcset="raiden/preview.avif" type="image/avif">
-  <img src="raiden/screenshot.jpg" alt="Raiden Shogun theme">
+  <source srcset="raiden/window.avif" type="image/avif">
+  <img src="raiden/window.jpg" alt="Raiden Shogun theme">
 </picture>
 
 [`Theme.css`](raiden/Theme.css) · Base: Dark · 稲妻幕府 · 勅令 · 一心浄土
@@ -181,8 +181,8 @@ The source GIF is square, so instead of stretching it across the window this the
 ## Clorinde · クロリンデ
 
 <picture>
-  <source srcset="clorinde/preview.avif" type="image/avif">
-  <img src="clorinde/screenshot.jpg" alt="Clorinde theme">
+  <source srcset="clorinde/window.avif" type="image/avif">
+  <img src="clorinde/window.jpg" alt="Clorinde theme">
 </picture>
 
 [`Theme.css`](clorinde/Theme.css) · Base: Dark · 決闘代理人 · 依頼書 · 審判の銃声
