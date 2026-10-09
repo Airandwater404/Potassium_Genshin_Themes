@@ -21,6 +21,15 @@ Previews are animated (AVIF). Browsers that can't play AVIF show a still screens
 3. Open the theme's folder, copy everything in its `Theme.css` and paste it into **Custom CSS**.
 4. Type a name under **Save** and click **Save**.
 
+## Loading screen
+
+Every theme also replaces Potassium's own loading and login picture with its wallpaper, softly blurred, so the theme starts the moment the app opens. The last tile is Potassium's default for comparison.
+
+<picture>
+  <source srcset="loading.avif" type="image/avif">
+  <img src="loading.jpg" alt="Loading screens of all seven themes">
+</picture>
+
 ## Labels in every theme
 
 | Text | Reading | Meaning |
