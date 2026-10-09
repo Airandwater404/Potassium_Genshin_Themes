@@ -9,7 +9,7 @@ Seven animated Genshin Impact themes for the Potassium executor. Each one has it
 | [Moontide Sea](#moontide-sea--月潮の海) | Dark | Deep-sea glass, glowing floating panels, gradient heading |
 | [Bride Furina](#bride-furina--フリーナ) | **Light** | Frosted veil, serif type, centred tabs, double borders |
 | [Sea of Flowers](#sea-of-flowers--花の海) | Dark | Minimal starfall, monospace labels, shooting-star tab underline |
-| [Raiden Shogun](#raiden-shogun--雷電将軍) | Dark | Electric violet, portrait on the right fading into storm purple, slanted tabs, glowing seam |
+| [Raiden Shogun](#raiden-shogun--雷電将軍) | Dark | Electric violet, Raiden in the rain, slanted tabs, glowing seam |
 | [Clorinde](#clorinde--クロリンデ) | Dark | Fontaine duelist, midnight teal and brass gold, art-deco frame, diamond markers |
 
 Previews are animated (AVIF) and show the Start page, a script tab and the loading screen at full size. Browsers that can't play AVIF show a still screenshot instead.
@@ -178,13 +178,13 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Raiden Shogun · 雷電将軍
 
 <picture>
-  <source srcset="raiden/screens.avif" type="image/avif">
-  <img src="raiden/screens.jpg" alt="Raiden Shogun theme">
+  <source srcset="raiden/rain-screens.avif" type="image/avif">
+  <img src="raiden/rain-screens.jpg" alt="Raiden Shogun theme">
 </picture>
 
 <picture>
-  <source srcset="raiden/loading.avif" type="image/avif">
-  <img src="raiden/loading.jpg" alt="Loading screen">
+  <source srcset="raiden/rain-loading.avif" type="image/avif">
+  <img src="raiden/rain-loading.jpg" alt="Loading screen">
 </picture>
 
 [`Theme.css`](raiden/Theme.css) · Base: Dark · 稲妻幕府 · 勅令 · 一心浄土
@@ -238,12 +238,12 @@ The source GIF is square, so instead of stretching it across the window this the
 
 ## Credits
 
-Genshin Impact and its characters belong to HoYoverse. The first five wallpapers are converted from live wallpapers posted on [MoeWalls](https://moewalls.com):
+Genshin Impact and its characters belong to HoYoverse. Six of the wallpapers are converted from live wallpapers posted on [MoeWalls](https://moewalls.com):
 [Yae Miko Sakura Cherry Blossoms](https://moewalls.com/anime/yae-miko-sakura-cherry-blossoms-genshin-impact-live-wallpaper/),
 [Kujou Sara Ronin](https://moewalls.com/anime/kujou-sara-ronin-genshin-impact-live-wallpaper/),
 [Moontide Sea](https://moewalls.com/anime/moontide-sea-genshin-impact-live-wallpaper/),
-[Bride Furina](https://moewalls.com/anime/bride-furina-genshin-impact-live-wallpaper/) and
-[Sea of Flowers](https://moewalls.com/anime/sea-of-flowers-genshin-impact-live-wallpaper/).
+[Bride Furina](https://moewalls.com/anime/bride-furina-genshin-impact-live-wallpaper/),
+[Sea of Flowers](https://moewalls.com/anime/sea-of-flowers-genshin-impact-live-wallpaper/) and
+[Raiden Shogun in the Rain](https://moewalls.com/anime/raiden-shogun-in-the-rain-genshin-impact-live-wallpaper/).
 
-The Raiden Shogun and Clorinde wallpapers are converted from GIFs on [KLIPY](https://klipy.com):
-[Raiden](https://klipy.com/gifs/raiden-51) and [Clorinde](https://klipy.com/gifs/clorinde-3). The Raiden GIF keeps its creator's watermark in the top-right corner.
+The Clorinde wallpaper is converted from a GIF on [KLIPY](https://klipy.com): [Clorinde](https://klipy.com/gifs/clorinde-3).

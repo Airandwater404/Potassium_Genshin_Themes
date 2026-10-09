@@ -181,5 +181,5 @@
 
 /* Animated wallpaper behind the whole app. */
 html, body {
-  background: linear-gradient(90deg, #120a2b 0%, #120a2b 36%, rgba(18, 10, 43, 0.6) 50%, rgba(18, 10, 43, 0) 66%), url("https://raw.githubusercontent.com/Airandwater404/Potassium_Genshin_Themes/main/raiden/raiden.avif") right center / contain no-repeat, linear-gradient(160deg, #1d1042, #0b061c) !important;
+  background: linear-gradient(90deg, rgba(18, 10, 43, 0.55), rgba(18, 10, 43, 0.15) 45%, rgba(18, 10, 43, 0) 70%), linear-gradient(rgba(70, 35, 150, 0.16), rgba(70, 35, 150, 0.16)), url("https://raw.githubusercontent.com/Airandwater404/Potassium_Genshin_Themes/main/raiden/raiden.avif") center / cover fixed no-repeat, #120a2b !important;
 }
