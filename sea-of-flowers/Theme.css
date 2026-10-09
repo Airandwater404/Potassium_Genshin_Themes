@@ -80,6 +80,13 @@
 .monaco-editor .minimap { opacity: 0.55 !important; }
 .monaco-editor .minimap-shadow-visible { box-shadow: none !important; }
 
+/* Show the wallpaper on the loading and login screens instead of Potassium's own picture. */
+:root[data-theme] .backdrop {
+  background: color-mix(in srgb, #061a7a 30%, transparent) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  backdrop-filter: blur(6px) !important;
+}
+
 /* Japanese labels next to the English ones. */
 :root[data-theme] .titlebar-title { font-size: 0 !important; }
 :root[data-theme] .titlebar-title::after {
