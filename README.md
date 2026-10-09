@@ -12,7 +12,7 @@ Seven animated Genshin Impact themes for the Potassium executor. Each one has it
 | [Raiden Shogun](#raiden-shogun--雷電将軍) | Dark | Electric violet, portrait on the right fading into storm purple, slanted tabs, glowing seam |
 | [Clorinde](#clorinde--クロリンデ) | Dark | Fontaine duelist, midnight teal and brass gold, art-deco frame, diamond markers |
 
-Previews are animated (AVIF). Browsers that can't play AVIF show a still screenshot instead.
+Previews are animated (AVIF) and show the Start page and a script tab side by side. Browsers that can't play AVIF show a still screenshot instead.
 
 ## Install
 
@@ -176,7 +176,7 @@ Each theme below also has its own text; open **What the Japanese means** under i
 
 </details>
 
-The source GIF is square, so instead of stretching it across the window this theme pins it to the right at full height and fades it into purple on the left. The preview above is a narrow window; on a wide one the left side is solid storm purple.
+The source GIF is square, so instead of stretching it across the window this theme pins it to the right at full height and fades it into purple on the left.
 
 ## Clorinde · クロリンデ
 
