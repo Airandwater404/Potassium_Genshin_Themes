@@ -1,0 +1,177 @@
+/* Columbina theme for Potassium. Base theme: Dark. */
+:root[data-theme] {
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --bg-app: rgba(22, 14, 20, 0.1);
+  --bg-chrome: rgba(22, 14, 20, 0.5);
+  --bg-sidebar: rgba(22, 14, 20, 0.55);
+  --bg-editor: rgba(22, 14, 20, 0.45);
+  --bg-panel: rgba(22, 14, 20, 0.58);
+  --bg-status: rgba(22, 14, 20, 0.64);
+  --bg-elevated: rgba(22, 14, 20, 0.96);
+  --bg-input: rgba(22, 14, 20, 0.6);
+  --bg-hover: rgba(242, 167, 200, 0.12);
+  --bg-active: rgba(242, 167, 200, 0.22);
+  --border: rgba(242, 200, 220, 0.16);
+  --border-strong: rgba(242, 200, 220, 0.34);
+
+  --text: #fbf0f4;
+  --text-muted: #dcc2cf;
+  --text-faint: #9a8090;
+  --row-icon: #ffd0e3;
+
+  --accent: rgb(242, 167, 200);
+  --accent-hover: #ffd0e3;
+  --accent-soft: rgba(242, 167, 200, 0.2);
+  --on-accent: #3a1428;
+  --tab-accent: rgb(242, 167, 200);
+  --tab-rule: transparent;
+  --tab-glyph: #ffd0e3;
+  --tab-divider-width: 0px;
+  --tab-active-bg: rgba(242, 167, 200, 0.16);
+
+  --ok: #8be9a8;
+  --warn: #ffd76e;
+  --danger: #ff6b7a;
+  --titlebar-fg: #fbf0f4;
+  --titlebar-close-hover: #c0507e;
+  --scrollbar-thumb: rgba(242, 167, 200, 0.3);
+}
+
+/* Settings opens over everything; keep it readable over the moving wallpaper. */
+:root[data-theme] .settings-dialog {
+  background-color: rgba(22, 14, 20, 0.9) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  backdrop-filter: blur(24px) saturate(1.2);
+}
+
+:root[data-theme] .settings-dialog .settings {
+  background-color: transparent !important;
+}
+
+/* Monaco paints its own solid background; let the wallpaper through. */
+.monaco-editor,
+.monaco-editor .overflow-guard,
+.monaco-editor-background,
+.monaco-editor .margin,
+.monaco-editor .inputarea.ime-input {
+  background-color: transparent !important;
+}
+
+.monaco-editor .view-overlays .current-line,
+.monaco-editor .margin-view-overlays .current-line-margin {
+  background: rgba(242, 167, 200, 0.07) !important;
+  border: none !important;
+}
+
+.monaco-editor .line-numbers { color: #9a8090 !important; }
+.monaco-editor .line-numbers.active-line-number { color: #ffd0e3 !important; }
+.monaco-editor .view-lines { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85); }
+.monaco-editor .scroll-decoration { box-shadow: none !important; }
+
+/* The minimap is a canvas with a solid fill; blending drops it into the wallpaper. */
+.monaco-editor .minimap,
+.monaco-editor .minimap canvas {
+  mix-blend-mode: screen !important;
+}
+
+.monaco-editor .minimap { opacity: 0.55 !important; }
+.monaco-editor .minimap-shadow-visible { box-shadow: none !important; }
+
+/* Show the wallpaper on the loading and login screens instead of Potassium's own picture. */
+:root[data-theme] .backdrop {
+  background: color-mix(in srgb, #160e14 30%, transparent) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  backdrop-filter: blur(6px) !important;
+}
+
+/* Japanese labels next to the English ones. */
+:root[data-theme] .titlebar-title { font-size: 0 !important; }
+:root[data-theme] .titlebar-title::after {
+  content: "ファデュイ · カリウム";
+  font-size: 13px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.28em;
+}
+
+:root[data-theme] .sidebar .head-title { font-size: 0 !important; }
+:root[data-theme] .sidebar .head-title::after {
+  content: "子守唄";
+  font-size: 14px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.08em;
+}
+
+:root[data-theme] .sidebar .section:has(+ .section) .section-title::after { content: " · スクリプト"; letter-spacing: 0.04em; }
+:root[data-theme] .sidebar .section + .section .section-title::after { content: " · 自動実行"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(1)::after { content: "　出力"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(2)::after { content: "　問題"; letter-spacing: 0.04em; }
+
+:root[data-theme] .start .hero h1 { font-size: 0 !important; line-height: 1 !important; }
+:root[data-theme] .start .hero h1::before {
+  content: "COLUMBINA · 少女";
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  color: var(--accent);
+}
+
+:root[data-theme] .start .hero h1::after {
+  content: "コロンビーナ";
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+:root[data-theme] .start .links h2::after { content: "　始める"; }
+:root[data-theme] .start .recent h2::after { content: "　最近"; }
+:root[data-theme] .start .tip h2::after { content: "　今日のヒント"; }
+
+/* A vertical line of text at the foot of the explorer. */
+:root[data-theme] .sidebar { position: relative; isolation: isolate; }
+:root[data-theme] .sidebar::after {
+  content: "月の歌声";
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  writing-mode: vertical-rl;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  color: rgba(255, 208, 227, 0.42);
+  pointer-events: none;
+}
+
+/* Soft rounded glass with a feather glow. */
+:root[data-theme] .editor-area {
+  margin: 8px 8px 0 4px;
+  border: 1px solid rgba(255, 208, 227, 0.22);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(242, 167, 200, 0.12);
+}
+:root[data-theme] .splitter-x { background-color: transparent !important; }
+:root[data-theme] .tab-bar { box-shadow: inset 0 -1px 0 rgba(255, 208, 227, 0.16); }
+:root[data-theme] .tab-bar .strip .tab { background-image: none; border-radius: 12px 12px 0 0; }
+:root[data-theme] .tab-bar .strip .tab::before,
+:root[data-theme] .tab-bar .strip .tab::after { display: none; }
+:root[data-theme] .tab-bar .strip .tab.is-active { background-color: rgba(242, 167, 200, 0.2); color: #ffffff; }
+:root[data-theme] .sidebar .section-title { color: #f2a7c8; }
+:root[data-theme] .chip-button { border-radius: 999px; }
+
+:root[data-theme] .start .hero h1::after {
+  color: #fff4f8;
+  text-shadow: 0 0 14px rgba(242, 167, 200, 0.75), 0 0 34px rgba(200, 120, 170, 0.45);
+}
+
+/* Animated wallpaper behind the whole app. */
+html, body {
+  background: linear-gradient(90deg, rgba(18, 10, 16, 0.55) 0%, rgba(18, 10, 16, 0.15) 40%, rgba(18, 10, 16, 0) 65%), url("https://raw.githubusercontent.com/Airandwater404/Potassium_Genshin_Themes/main/columbina/columbina.avif") center / cover fixed no-repeat, #160e14 !important;
+}

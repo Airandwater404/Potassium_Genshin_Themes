@@ -1,6 +1,6 @@
 # Genshin Impact themes for Potassium
 
-Seven animated Genshin Impact themes for the Potassium executor. Each one has its own colour palette, its own layout and its own Japanese labels, with a looping wallpaper playing behind the whole app.
+Eight animated Genshin Impact themes for the Potassium executor. Each one has its own colour palette, its own layout and its own Japanese labels, with a looping wallpaper playing behind the whole app.
 
 | Theme | Base theme | Look |
 |---|---|---|
@@ -11,6 +11,7 @@ Seven animated Genshin Impact themes for the Potassium executor. Each one has it
 | [Sea of Flowers](#sea-of-flowers--花の海) | Dark | Minimal starfall, monospace labels, shooting-star tab underline |
 | [Raiden Shogun](#raiden-shogun--雷電将軍) | Dark | Electric violet, Raiden in the rain, slanted tabs, glowing seam |
 | [Clorinde](#clorinde--クロリンデ) | Dark | Fontaine duelist, midnight teal and brass gold, art-deco frame, diamond markers |
+| [Columbina](#columbina--コロンビーナ) | Dark | Moonlit mauve and blush pink, rounded glass, feather-soft glow, star markers |
 
 Previews are animated (AVIF) and show the Start page, a script tab and the loading screen at full size. Browsers that can't play AVIF show a still screenshot instead.
 
@@ -202,8 +203,6 @@ Each theme below also has its own text; open **What the Japanese means** under i
 
 </details>
 
-The source GIF is square, so instead of stretching it across the window this theme pins it to the right at full height and fades it into purple on the left.
-
 ## Clorinde · クロリンデ
 
 <picture>
@@ -230,6 +229,33 @@ The source GIF is square, so instead of stretching it across the window this the
 
 </details>
 
+## Columbina · コロンビーナ
+
+<picture>
+  <source srcset="columbina/screens.avif" type="image/avif">
+  <img src="columbina/screens.jpg" alt="Columbina theme">
+</picture>
+
+<picture>
+  <source srcset="columbina/loading.avif" type="image/avif">
+  <img src="columbina/loading.jpg" alt="Loading screen">
+</picture>
+
+[`Theme.css`](columbina/Theme.css) · Base: Dark · ファデュイ · 子守唄 · 月の歌声
+
+<details>
+<summary>What the Japanese means</summary>
+
+| Text | Reading | Meaning |
+|---|---|---|
+| ファデュイ | Fadyui | The Fatui (title bar) |
+| 子守唄 | komoriuta | Lullaby (explorer) |
+| 少女 | shōjo | Damselette, her Harbinger title |
+| コロンビーナ | Koronbīna | Her name |
+| 月の歌声 | tsuki no utagoe | A singing voice under the moon |
+
+</details>
+
 ## Notes
 
 - Wallpapers are animated AVIF files (0.3 to 4 MB) loaded from this repo, so you need internet the first time. If a wallpaper can't load, the colours still apply.
@@ -247,3 +273,5 @@ Genshin Impact and its characters belong to HoYoverse. Six of the wallpapers are
 [Raiden Shogun in the Rain](https://moewalls.com/anime/raiden-shogun-in-the-rain-genshin-impact-live-wallpaper/).
 
 The Clorinde wallpaper is converted from a GIF on [KLIPY](https://klipy.com): [Clorinde](https://klipy.com/gifs/clorinde-3).
+
+The Columbina wallpaper is converted from a live wallpaper posted on [WallpaperWaifu](https://wallpaperwaifu.com): [Columbina Damselette](https://wallpaperwaifu.com/anime/columbina-damselette-genshin-impact-live-wallpaper-2499/).
