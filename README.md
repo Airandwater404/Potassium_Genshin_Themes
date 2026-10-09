@@ -12,6 +12,8 @@ Seven animated Genshin Impact themes for the Potassium executor. Each one has it
 | [Raiden Shogun](#raiden-shogun--雷電将軍) | Dark | Electric violet, portrait on the right fading into storm purple, slanted tabs, glowing seam |
 | [Clorinde](#clorinde--クロリンデ) | Dark | Fontaine duelist, midnight teal and brass gold, art-deco frame, diamond markers |
 
+Previews are animated (AVIF). Browsers that can't play AVIF show a still screenshot instead.
+
 ## Install
 
 1. In Potassium, open **Settings → Appearance → Custom theme**.
@@ -21,37 +23,55 @@ Seven animated Genshin Impact themes for the Potassium executor. Each one has it
 
 ## Yae Miko · 八重神子
 
-![Yae Miko theme](yae-miko/screenshot.jpg)
+<picture>
+  <source srcset="yae-miko/preview.avif" type="image/avif">
+  <img src="yae-miko/screenshot.jpg" alt="Yae Miko theme">
+</picture>
 
 [`Theme.css`](yae-miko/Theme.css) · Base: Dark · 鳴神大社 · 巻物 · 桜花爛漫
 
 ## Kujou Sara · 九条裟羅
 
-![Kujou Sara theme](kujou-sara/screenshot.jpg)
+<picture>
+  <source srcset="kujou-sara/preview.avif" type="image/avif">
+  <img src="kujou-sara/screenshot.jpg" alt="Kujou Sara theme">
+</picture>
 
 [`Theme.css`](kujou-sara/Theme.css) · Base: **Light** · 天領奉行 · 軍令 · 雷光一閃
 
 ## Moontide Sea · 月潮の海
 
-![Moontide Sea theme](moontide/screenshot.jpg)
+<picture>
+  <source srcset="moontide/preview.avif" type="image/avif">
+  <img src="moontide/screenshot.jpg" alt="Moontide Sea theme">
+</picture>
 
 [`Theme.css`](moontide/Theme.css) · Base: Dark · 月潮 · 潮流 · 静かなる潮騒
 
 ## Bride Furina · フリーナ
 
-![Bride Furina theme](furina/screenshot.jpg)
+<picture>
+  <source srcset="furina/preview.avif" type="image/avif">
+  <img src="furina/screenshot.jpg" alt="Bride Furina theme">
+</picture>
 
 [`Theme.css`](furina/Theme.css) · Base: **Light** · 水の花嫁 · 台本 · 正義の舞台
 
 ## Sea of Flowers · 花の海
 
-![Sea of Flowers theme](sea-of-flowers/screenshot.jpg)
+<picture>
+  <source srcset="sea-of-flowers/preview.avif" type="image/avif">
+  <img src="sea-of-flowers/screenshot.jpg" alt="Sea of Flowers theme">
+</picture>
 
 [`Theme.css`](sea-of-flowers/Theme.css) · Base: Dark · 花海 · 花束 · 流れ星に願いを
 
 ## Raiden Shogun · 雷電将軍
 
-![Raiden Shogun theme](raiden/screenshot.jpg)
+<picture>
+  <source srcset="raiden/preview.avif" type="image/avif">
+  <img src="raiden/screenshot.jpg" alt="Raiden Shogun theme">
+</picture>
 
 [`Theme.css`](raiden/Theme.css) · Base: Dark · 稲妻幕府 · 勅令 · 一心浄土
 
@@ -59,7 +79,10 @@ The source GIF is square, so instead of stretching it across the window this the
 
 ## Clorinde · クロリンデ
 
-![Clorinde theme](clorinde/screenshot.jpg)
+<picture>
+  <source srcset="clorinde/preview.avif" type="image/avif">
+  <img src="clorinde/screenshot.jpg" alt="Clorinde theme">
+</picture>
 
 [`Theme.css`](clorinde/Theme.css) · Base: Dark · 決闘代理人 · 依頼書 · 審判の銃声
 
