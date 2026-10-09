@@ -45,8 +45,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Yae Miko · 八重神子
 
 <picture>
-  <source srcset="yae-miko/screens.avif" type="image/avif">
-  <img src="yae-miko/screens.jpg" alt="Yae Miko theme">
+  <source srcset="yae-miko/ui.avif" type="image/avif">
+  <img src="yae-miko/ui.jpg" alt="Yae Miko theme">
 </picture>
 
 <picture>
@@ -72,8 +72,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Kujou Sara · 九条裟羅
 
 <picture>
-  <source srcset="kujou-sara/screens.avif" type="image/avif">
-  <img src="kujou-sara/screens.jpg" alt="Kujou Sara theme">
+  <source srcset="kujou-sara/ui.avif" type="image/avif">
+  <img src="kujou-sara/ui.jpg" alt="Kujou Sara theme">
 </picture>
 
 <picture>
@@ -100,8 +100,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Moontide Sea · 月潮の海
 
 <picture>
-  <source srcset="moontide/screens.avif" type="image/avif">
-  <img src="moontide/screens.jpg" alt="Moontide Sea theme">
+  <source srcset="moontide/ui.avif" type="image/avif">
+  <img src="moontide/ui.jpg" alt="Moontide Sea theme">
 </picture>
 
 <picture>
@@ -126,8 +126,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Bride Furina · フリーナ
 
 <picture>
-  <source srcset="furina/screens.avif" type="image/avif">
-  <img src="furina/screens.jpg" alt="Bride Furina theme">
+  <source srcset="furina/ui.avif" type="image/avif">
+  <img src="furina/ui.jpg" alt="Bride Furina theme">
 </picture>
 
 <picture>
@@ -153,8 +153,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Sea of Flowers · 花の海
 
 <picture>
-  <source srcset="sea-of-flowers/screens.avif" type="image/avif">
-  <img src="sea-of-flowers/screens.jpg" alt="Sea of Flowers theme">
+  <source srcset="sea-of-flowers/ui.avif" type="image/avif">
+  <img src="sea-of-flowers/ui.jpg" alt="Sea of Flowers theme">
 </picture>
 
 <picture>
@@ -179,8 +179,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Raiden Shogun · 雷電将軍
 
 <picture>
-  <source srcset="raiden/rain-screens.avif" type="image/avif">
-  <img src="raiden/rain-screens.jpg" alt="Raiden Shogun theme">
+  <source srcset="raiden/ui.avif" type="image/avif">
+  <img src="raiden/ui.jpg" alt="Raiden Shogun theme">
 </picture>
 
 <picture>
@@ -206,8 +206,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Clorinde · クロリンデ
 
 <picture>
-  <source srcset="clorinde/screens.avif" type="image/avif">
-  <img src="clorinde/screens.jpg" alt="Clorinde theme">
+  <source srcset="clorinde/ui.avif" type="image/avif">
+  <img src="clorinde/ui.jpg" alt="Clorinde theme">
 </picture>
 
 <picture>
@@ -232,8 +232,8 @@ Each theme below also has its own text; open **What the Japanese means** under i
 ## Columbina · コロンビーナ
 
 <picture>
-  <source srcset="columbina/screens.avif" type="image/avif">
-  <img src="columbina/screens.jpg" alt="Columbina theme">
+  <source srcset="columbina/ui.avif" type="image/avif">
+  <img src="columbina/ui.jpg" alt="Columbina theme">
 </picture>
 
 <picture>
