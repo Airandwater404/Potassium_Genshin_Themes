@@ -21,6 +21,21 @@ Previews are animated (AVIF). Browsers that can't play AVIF show a still screens
 3. Open the theme's folder, copy everything in its `Theme.css` and paste it into **Custom CSS**.
 4. Type a name under **Save** and click **Save**.
 
+## Labels in every theme
+
+| Text | Reading | Meaning |
+|---|---|---|
+| カリウム | karyūmu | Potassium |
+| スクリプト | sukuriputo | Scripts |
+| 自動実行 | jidō jikkō | Auto execute |
+| 出力 | shutsuryoku | Output (console) |
+| 問題 | mondai | Problems |
+| 始める | hajimeru | Start |
+| 最近 | saikin | Recent |
+| 今日のヒント | kyō no hinto | Tip of the day |
+
+Each theme below also has its own text; open **What the Japanese means** under its preview.
+
 ## Yae Miko · 八重神子
 
 <picture>
@@ -29,6 +44,19 @@ Previews are animated (AVIF). Browsers that can't play AVIF show a still screens
 </picture>
 
 [`Theme.css`](yae-miko/Theme.css) · Base: Dark · 鳴神大社 · 巻物 · 桜花爛漫
+
+<details>
+<summary>What the Japanese means</summary>
+
+| Text | Reading | Meaning |
+|---|---|---|
+| 鳴神大社 | Narukami Taisha | Grand Narukami Shrine, the shrine Yae Miko runs (title bar) |
+| 巻物 | makimono | Scrolls (explorer) |
+| 狐の宮司 | kitsune no gūji | The fox head priestess |
+| 八重神子 | Yae Miko | Her name |
+| 桜花爛漫 | ōka ranman | Cherry blossoms in full bloom |
+
+</details>
 
 ## Kujou Sara · 九条裟羅
 
@@ -39,6 +67,20 @@ Previews are animated (AVIF). Browsers that can't play AVIF show a still screens
 
 [`Theme.css`](kujou-sara/Theme.css) · Base: **Light** · 天領奉行 · 軍令 · 雷光一閃
 
+<details>
+<summary>What the Japanese means</summary>
+
+| Text | Reading | Meaning |
+|---|---|---|
+| 天領奉行 | Tenryō Bugyō | The Tenryou Commission, Inazuma's army (title bar) |
+| 軍令 | gunrei | Military orders (explorer) |
+| 天狗 | tengu | Tengu, the crow-winged yokai she is |
+| 九条裟羅 | Kujō Sara | Her name |
+| 九条 | Kujō | Her clan name (the red seal) |
+| 雷光一閃 | raikō issen | A single flash of lightning |
+
+</details>
+
 ## Moontide Sea · 月潮の海
 
 <picture>
@@ -47,6 +89,18 @@ Previews are animated (AVIF). Browsers that can't play AVIF show a still screens
 </picture>
 
 [`Theme.css`](moontide/Theme.css) · Base: Dark · 月潮 · 潮流 · 静かなる潮騒
+
+<details>
+<summary>What the Japanese means</summary>
+
+| Text | Reading | Meaning |
+|---|---|---|
+| 月潮 | tsukishio | Moon tide (title bar) |
+| 潮流 | chōryū | Currents (explorer) |
+| 月潮の海 | tsukishio no umi | Sea of the Moontide |
+| 静かなる潮騒 | shizukanaru shiosai | The quiet sound of the waves |
+
+</details>
 
 ## Bride Furina · フリーナ
 
@@ -57,6 +111,19 @@ Previews are animated (AVIF). Browsers that can't play AVIF show a still screens
 
 [`Theme.css`](furina/Theme.css) · Base: **Light** · 水の花嫁 · 台本 · 正義の舞台
 
+<details>
+<summary>What the Japanese means</summary>
+
+| Text | Reading | Meaning |
+|---|---|---|
+| 水の花嫁 | mizu no hanayome | Bride of water (title bar) |
+| 台本 | daihon | A theatre script (explorer): Furina is an actress, and this is where your scripts live |
+| 水神の花嫁 | suijin no hanayome | Bride of the Hydro god |
+| フリーナ | Furīna | Her name |
+| 正義の舞台 | seigi no butai | Stage of justice, a nod to Fontaine's courtroom opera |
+
+</details>
+
 ## Sea of Flowers · 花の海
 
 <picture>
@@ -66,6 +133,18 @@ Previews are animated (AVIF). Browsers that can't play AVIF show a still screens
 
 [`Theme.css`](sea-of-flowers/Theme.css) · Base: Dark · 花海 · 花束 · 流れ星に願いを
 
+<details>
+<summary>What the Japanese means</summary>
+
+| Text | Reading | Meaning |
+|---|---|---|
+| 花の海 | hana no umi | Sea of flowers (title bar) |
+| 花海 | kakai | Flower sea |
+| 花束 | hanataba | Bouquet (explorer) |
+| 流れ星に願いを | nagareboshi ni negai o | Make a wish on a shooting star |
+
+</details>
+
 ## Raiden Shogun · 雷電将軍
 
 <picture>
@@ -74,6 +153,19 @@ Previews are animated (AVIF). Browsers that can't play AVIF show a still screens
 </picture>
 
 [`Theme.css`](raiden/Theme.css) · Base: Dark · 稲妻幕府 · 勅令 · 一心浄土
+
+<details>
+<summary>What the Japanese means</summary>
+
+| Text | Reading | Meaning |
+|---|---|---|
+| 稲妻幕府 | Inazuma Bakufu | The Inazuma Shogunate (title bar) |
+| 勅令 | chokurei | Imperial decree (explorer) |
+| 永遠の神 | eien no kami | God of eternity |
+| 雷電将軍 | Raiden Shōgun | Her title |
+| 一心浄土 | Isshin Jōdo | The Plane of Euthymia, her inner realm |
+
+</details>
 
 The source GIF is square, so instead of stretching it across the window this theme pins it to the right at full height and fades it into purple on the left. The preview above is a narrow window; on a wide one the left side is solid storm purple.
 
@@ -85,6 +177,18 @@ The source GIF is square, so instead of stretching it across the window this the
 </picture>
 
 [`Theme.css`](clorinde/Theme.css) · Base: Dark · 決闘代理人 · 依頼書 · 審判の銃声
+
+<details>
+<summary>What the Japanese means</summary>
+
+| Text | Reading | Meaning |
+|---|---|---|
+| 決闘代理人 | kettō dairinin | Champion duelist, who fights duels on others' behalf (title bar) |
+| 依頼書 | iraisho | Commission letters (explorer) |
+| クロリンデ | Kurorinde | Her name |
+| 審判の銃声 | shinpan no jūsei | The gunshot of judgment |
+
+</details>
 
 ## Notes
 
