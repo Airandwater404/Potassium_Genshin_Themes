@@ -1,0 +1,192 @@
+/* Kujou Sara theme for Potassium. Base theme: Light. */
+:root[data-theme] {
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+
+  --bg-app: rgba(255, 252, 250, 0.20);
+  --bg-chrome: rgba(255, 251, 249, 0.62);
+  --bg-sidebar: rgba(255, 250, 248, 0.62);
+  --bg-editor: rgba(255, 252, 250, 0.52);
+  --bg-panel: rgba(255, 250, 248, 0.70);
+  --bg-status: #b8222e;
+  --bg-elevated: rgba(255, 252, 250, 0.96);
+  --bg-input: rgba(255, 255, 255, 0.75);
+  --bg-hover: rgba(184, 34, 46, 0.07);
+  --bg-active: rgba(184, 34, 46, 0.13);
+  --border: rgba(29, 26, 28, 0.14);
+  --border-strong: rgba(29, 26, 28, 0.32);
+
+  --text: #1d1a1c;
+  --text-muted: #574a50;
+  --text-faint: #8d7f84;
+  --row-icon: #b8222e;
+
+  --accent: #b8222e;
+  --accent-hover: #cf2f3b;
+  --accent-soft: rgba(184, 34, 46, 0.14);
+  --on-accent: #ffffff;
+  --tab-accent: #b8222e;
+  --tab-rule: #b8222e;
+  --tab-glyph: #b8222e;
+  --tab-active-bg: rgba(255, 253, 252, 0.88);
+
+  --ok: #2f7d4f;
+  --warn: #b7791f;
+  --danger: #c0262d;
+  --titlebar-fg: #f4ece8;
+  --titlebar-close-hover: #b8222e;
+  --scrollbar-thumb: rgba(29, 26, 28, 0.25);
+}
+
+/* Settings opens over everything; keep it readable over the moving wallpaper. */
+:root[data-theme] .settings-dialog {
+  background-color: rgba(255, 251, 249, 0.92) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  backdrop-filter: blur(24px) saturate(1.2);
+}
+
+:root[data-theme] .settings-dialog .settings {
+  background-color: transparent !important;
+}
+
+/* Monaco paints its own solid background; let the wallpaper through. */
+.monaco-editor,
+.monaco-editor .overflow-guard,
+.monaco-editor-background,
+.monaco-editor .margin,
+.monaco-editor .inputarea.ime-input {
+  background-color: transparent !important;
+}
+
+.monaco-editor .view-overlays .current-line,
+.monaco-editor .margin-view-overlays .current-line-margin {
+  background: rgba(184, 34, 46, 0.06) !important;
+  border: none !important;
+}
+
+.monaco-editor .line-numbers { color: #a0939a !important; }
+.monaco-editor .line-numbers.active-line-number { color: #b8222e !important; }
+.monaco-editor .view-lines { text-shadow: 0 0 3px rgba(255, 255, 255, 0.9); }
+.monaco-editor .scroll-decoration { box-shadow: none !important; }
+
+/* The minimap is a canvas with a solid fill; blending drops it into the wallpaper. */
+.monaco-editor .minimap,
+.monaco-editor .minimap canvas {
+  mix-blend-mode: multiply !important;
+}
+
+.monaco-editor .minimap { opacity: 0.55 !important; }
+.monaco-editor .minimap-shadow-visible { box-shadow: none !important; }
+
+/* Japanese labels next to the English ones. */
+:root[data-theme] .titlebar-title { font-size: 0 !important; }
+:root[data-theme] .titlebar-title::after {
+  content: "天領奉行 · カリウム";
+  font-size: 13px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.28em;
+}
+
+:root[data-theme] .sidebar .head-title { font-size: 0 !important; }
+:root[data-theme] .sidebar .head-title::after {
+  content: "軍令";
+  font-size: 14px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.08em;
+}
+
+:root[data-theme] .sidebar .section:has(+ .section) .section-title::after { content: " · スクリプト"; letter-spacing: 0.04em; }
+:root[data-theme] .sidebar .section + .section .section-title::after { content: " · 自動実行"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(1)::after { content: "　出力"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(2)::after { content: "　問題"; letter-spacing: 0.04em; }
+
+:root[data-theme] .start .hero h1 { font-size: 0 !important; line-height: 1 !important; }
+:root[data-theme] .start .hero h1::before {
+  content: "KUJOU SARA · 天狗";
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  color: var(--accent);
+}
+
+:root[data-theme] .start .hero h1::after {
+  content: "九条裟羅";
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+:root[data-theme] .start .links h2::after { content: "　始める"; }
+:root[data-theme] .start .recent h2::after { content: "　最近"; }
+:root[data-theme] .start .tip h2::after { content: "　今日のヒント"; }
+
+/* A vertical line of text at the foot of the explorer. */
+:root[data-theme] .sidebar { position: relative; isolation: isolate; }
+:root[data-theme] .sidebar::after {
+  content: "雷光一閃";
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  writing-mode: vertical-rl;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  color: rgba(184, 34, 46, 0.55);
+  pointer-events: none;
+}
+
+/* Black title band with paper-white text. */
+:root[data-theme] header.titlebar { background-color: #141113; border-bottom: 2px solid #b8222e; }
+:root[data-theme] .titlebar-button { color: #f4ece8; }
+
+/* Thick crimson rule on the active tab. */
+:root[data-theme] .tab-bar .strip .tab.is-active {
+  background-size: 100% 3px;
+  font-weight: 600;
+}
+
+/* Status bar is a solid crimson stripe. */
+:root[data-theme] .status { --text: #ffffff; --text-muted: #ffe3e5; --text-faint: #ffc7cb; color: #ffffff; box-shadow: none; }
+
+/* Red square bullets on the explorer sections. */
+:root[data-theme] .sidebar .section-title::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px 1px 0;
+  background-color: #b8222e;
+}
+
+:root[data-theme] .sidebar { border-right: 3px double rgba(29, 26, 28, 0.35); }
+
+/* Seal stamp beside the heading. */
+:root[data-theme] .start .hero h1::after { color: #1d1a1c; }
+:root[data-theme] .start .hero::before {
+  content: "九条";
+  float: left;
+  width: 54px;
+  height: 54px;
+  margin: 26px 18px 0 0;
+  border: 3px solid #b8222e;
+  background-color: rgba(184, 34, 46, 0.92);
+  color: #fff5f3;
+  font-family: "Yu Mincho", "MS PMincho", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  transform: rotate(-4deg);
+}
+
+/* Animated wallpaper behind the whole app. */
+html, body {
+  background: url("https://raw.githubusercontent.com/Airandwater404/Potassium_Genshin_Themes/main/kujou-sara/kujou-sara.avif") center / cover fixed no-repeat, #f6efec !important;
+}

@@ -1,0 +1,180 @@
+/* Bride Furina theme for Potassium. Base theme: Light. */
+:root[data-theme] {
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --bg-app: rgba(250, 244, 246, 0.15);
+  --bg-chrome: rgba(250, 245, 247, 0.52);
+  --bg-sidebar: rgba(249, 243, 246, 0.50);
+  --bg-editor: rgba(251, 247, 249, 0.46);
+  --bg-panel: rgba(249, 243, 246, 0.62);
+  --bg-status: rgba(246, 239, 243, 0.70);
+  --bg-elevated: rgba(252, 249, 251, 0.96);
+  --bg-input: rgba(255, 255, 255, 0.7);
+  --bg-hover: rgba(84, 101, 145, 0.08);
+  --bg-active: rgba(84, 101, 145, 0.15);
+  --border: rgba(84, 101, 145, 0.18);
+  --border-strong: rgba(84, 101, 145, 0.34);
+
+  --text: #2b3150;
+  --text-muted: #4f5d88;
+  --text-faint: #8590b2;
+  --row-icon: #5d6fb0;
+
+  --accent: #5d6fb0;
+  --accent-hover: #4b5c9d;
+  --accent-soft: rgba(93, 111, 176, 0.16);
+  --on-accent: #ffffff;
+  --tab-accent: #d9a3ab;
+  --tab-rule: #d9a3ab;
+  --tab-glyph: #5d6fb0;
+  --tab-active-bg: rgba(255, 255, 255, 0.7);
+
+  --ok: #3f9b7a;
+  --warn: #c08a2b;
+  --danger: #c4506a;
+  --titlebar-fg: #3a4266;
+  --titlebar-close-hover: #c4506a;
+  --scrollbar-thumb: rgba(84, 101, 145, 0.28);
+}
+
+/* Settings opens over everything; keep it readable over the moving wallpaper. */
+:root[data-theme] .settings-dialog {
+  background-color: rgba(250, 245, 248, 0.9) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  backdrop-filter: blur(24px) saturate(1.2);
+}
+
+:root[data-theme] .settings-dialog .settings {
+  background-color: transparent !important;
+}
+
+/* Monaco paints its own solid background; let the wallpaper through. */
+.monaco-editor,
+.monaco-editor .overflow-guard,
+.monaco-editor-background,
+.monaco-editor .margin,
+.monaco-editor .inputarea.ime-input {
+  background-color: transparent !important;
+}
+
+.monaco-editor .view-overlays .current-line,
+.monaco-editor .margin-view-overlays .current-line-margin {
+  background: rgba(93, 111, 176, 0.07) !important;
+  border: none !important;
+}
+
+.monaco-editor .line-numbers { color: #9aa2c2 !important; }
+.monaco-editor .line-numbers.active-line-number { color: #5d6fb0 !important; }
+.monaco-editor .view-lines { text-shadow: 0 0 3px rgba(255, 255, 255, 0.95); }
+.monaco-editor .scroll-decoration { box-shadow: none !important; }
+
+/* The minimap is a canvas with a solid fill; blending drops it into the wallpaper. */
+.monaco-editor .minimap,
+.monaco-editor .minimap canvas {
+  mix-blend-mode: multiply !important;
+}
+
+.monaco-editor .minimap { opacity: 0.55 !important; }
+.monaco-editor .minimap-shadow-visible { box-shadow: none !important; }
+
+/* Japanese labels next to the English ones. */
+:root[data-theme] .titlebar-title { font-size: 0 !important; }
+:root[data-theme] .titlebar-title::after {
+  content: "水の花嫁 · カリウム";
+  font-size: 13px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.28em;
+}
+
+:root[data-theme] .sidebar .head-title { font-size: 0 !important; }
+:root[data-theme] .sidebar .head-title::after {
+  content: "台本";
+  font-size: 14px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.08em;
+}
+
+:root[data-theme] .sidebar .section:has(+ .section) .section-title::after { content: " · スクリプト"; letter-spacing: 0.04em; }
+:root[data-theme] .sidebar .section + .section .section-title::after { content: " · 自動実行"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(1)::after { content: "　出力"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(2)::after { content: "　問題"; letter-spacing: 0.04em; }
+
+:root[data-theme] .start .hero h1 { font-size: 0 !important; line-height: 1 !important; }
+:root[data-theme] .start .hero h1::before {
+  content: "FURINA · 水神の花嫁";
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  color: var(--accent);
+}
+
+:root[data-theme] .start .hero h1::after {
+  content: "フリーナ";
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+:root[data-theme] .start .links h2::after { content: "　始める"; }
+:root[data-theme] .start .recent h2::after { content: "　最近"; }
+:root[data-theme] .start .tip h2::after { content: "　今日のヒント"; }
+
+/* A vertical line of text at the foot of the explorer. */
+:root[data-theme] .sidebar { position: relative; isolation: isolate; }
+:root[data-theme] .sidebar::after {
+  content: "正義の舞台";
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  writing-mode: vertical-rl;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  color: rgba(93, 111, 176, 0.45);
+  pointer-events: none;
+}
+
+/* Frosted glass on the explorer and console. */
+:root[data-theme] .sidebar,
+:root[data-theme] .console {
+  -webkit-backdrop-filter: blur(12px) saturate(1.1);
+  backdrop-filter: blur(12px) saturate(1.1);
+}
+
+/* Serif type for headings and tabs. */
+:root[data-theme] .tab-bar .strip .tab,
+:root[data-theme] .sidebar .section-title,
+:root[data-theme] .start h2,
+:root[data-theme] .console .tabs .tab {
+  font-family: "Yu Mincho", "BIZ UDPMincho", Georgia, serif;
+}
+
+/* Centred tabs with a blush rule. */
+:root[data-theme] .tab-bar .strip { justify-content: center; }
+:root[data-theme] .tab-bar .strip .tab.is-active { background-size: 100% 2px; }
+
+/* Thin double border around the explorer and console. */
+:root[data-theme] .sidebar { border-right: 3px double rgba(93, 111, 176, 0.35); }
+:root[data-theme] .console { border-top: 3px double rgba(93, 111, 176, 0.35); }
+
+:root[data-theme] .titlebar-title::after { font-style: italic; }
+:root[data-theme] .start .hero h1::after { color: #3a4266; }
+:root[data-theme] .start .hero::after {
+  content: "❦";
+  display: block;
+  margin-top: 6px;
+  color: #d9a3ab;
+  font-size: 22px;
+}
+
+/* Animated wallpaper behind the whole app. */
+html, body {
+  background: url("https://raw.githubusercontent.com/Airandwater404/Potassium_Genshin_Themes/main/furina/furina.avif") center / cover fixed no-repeat, #e9d4d9 !important;
+}

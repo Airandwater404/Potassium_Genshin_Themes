@@ -1,0 +1,180 @@
+/* Yae Miko theme for Potassium. Base theme: Dark. */
+:root[data-theme] {
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --bg-app: rgba(32, 16, 30, 0.18);
+  --bg-chrome: rgba(40, 18, 36, 0.38);
+  --bg-sidebar: transparent;
+  --bg-editor: rgba(38, 18, 34, 0.50);
+  --bg-panel: rgba(34, 16, 31, 0.55);
+  --bg-status: rgba(30, 14, 28, 0.60);
+  --bg-elevated: rgba(48, 22, 44, 0.94);
+  --bg-input: rgba(28, 12, 26, 0.45);
+  --bg-hover: rgba(242, 155, 189, 0.12);
+  --bg-active: rgba(242, 155, 189, 0.22);
+  --border: rgba(255, 200, 220, 0.14);
+  --border-strong: rgba(255, 200, 220, 0.28);
+
+  --text: #fdeef3;
+  --text-muted: #e3bfcf;
+  --text-faint: #b08aa0;
+  --row-icon: #f5a9c6;
+
+  --accent: #f59bbf;
+  --accent-hover: #f8b6d0;
+  --accent-soft: rgba(245, 155, 191, 0.2);
+  --on-accent: #3a1230;
+  --tab-accent: #f59bbf;
+  --tab-rule: transparent;
+  --tab-glyph: #f8b6d0;
+  --tab-divider-width: 0px;
+  --tab-active-bg: rgba(245, 155, 191, 0.24);
+
+  --ok: #9fe2bf;
+  --warn: #ffd479;
+  --danger: #ff6b8a;
+  --titlebar-fg: #fdeef3;
+  --titlebar-close-hover: #e0507a;
+  --scrollbar-thumb: rgba(245, 155, 191, 0.3);
+}
+
+/* Settings opens over everything; keep it readable over the moving wallpaper. */
+:root[data-theme] .settings-dialog {
+  background-color: rgba(40, 18, 36, 0.88) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  backdrop-filter: blur(24px) saturate(1.2);
+}
+
+:root[data-theme] .settings-dialog .settings {
+  background-color: transparent !important;
+}
+
+/* Monaco paints its own solid background; let the wallpaper through. */
+.monaco-editor,
+.monaco-editor .overflow-guard,
+.monaco-editor-background,
+.monaco-editor .margin,
+.monaco-editor .inputarea.ime-input {
+  background-color: transparent !important;
+}
+
+.monaco-editor .view-overlays .current-line,
+.monaco-editor .margin-view-overlays .current-line-margin {
+  background: rgba(245, 155, 191, 0.08) !important;
+  border: none !important;
+}
+
+.monaco-editor .line-numbers { color: #b08aa0 !important; }
+.monaco-editor .line-numbers.active-line-number { color: #f59bbf !important; }
+.monaco-editor .view-lines { text-shadow: 0 1px 2px rgba(30, 8, 26, 0.8); }
+.monaco-editor .scroll-decoration { box-shadow: none !important; }
+
+/* The minimap is a canvas with a solid fill; blending drops it into the wallpaper. */
+.monaco-editor .minimap,
+.monaco-editor .minimap canvas {
+  mix-blend-mode: screen !important;
+}
+
+.monaco-editor .minimap { opacity: 0.55 !important; }
+.monaco-editor .minimap-shadow-visible { box-shadow: none !important; }
+
+/* Japanese labels next to the English ones. */
+:root[data-theme] .titlebar-title { font-size: 0 !important; }
+:root[data-theme] .titlebar-title::after {
+  content: "鳴神大社 · カリウム";
+  font-size: 13px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.28em;
+}
+
+:root[data-theme] .sidebar .head-title { font-size: 0 !important; }
+:root[data-theme] .sidebar .head-title::after {
+  content: "巻物";
+  font-size: 14px;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  letter-spacing: 0.08em;
+}
+
+:root[data-theme] .sidebar .section:has(+ .section) .section-title::after { content: " · スクリプト"; letter-spacing: 0.04em; }
+:root[data-theme] .sidebar .section + .section .section-title::after { content: " · 自動実行"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(1)::after { content: "　出力"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(2)::after { content: "　問題"; letter-spacing: 0.04em; }
+
+:root[data-theme] .start .hero h1 { font-size: 0 !important; line-height: 1 !important; }
+:root[data-theme] .start .hero h1::before {
+  content: "YAE MIKO · 狐の宮司";
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  color: var(--accent);
+}
+
+:root[data-theme] .start .hero h1::after {
+  content: "八重神子";
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+:root[data-theme] .start .links h2::after { content: "　始める"; }
+:root[data-theme] .start .recent h2::after { content: "　最近"; }
+:root[data-theme] .start .tip h2::after { content: "　今日のヒント"; }
+
+/* A vertical line of text at the foot of the explorer. */
+:root[data-theme] .sidebar { position: relative; isolation: isolate; }
+:root[data-theme] .sidebar::after {
+  content: "桜花爛漫";
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  writing-mode: vertical-rl;
+  font-family: "Yu Mincho", "YuMincho", "BIZ UDPMincho", "MS PMincho", Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  color: rgba(255, 214, 228, 0.42);
+  pointer-events: none;
+}
+
+/* Floating explorer card. */
+:root[data-theme] .sidebar::before {
+  content: "";
+  position: absolute;
+  inset: 8px 4px 8px 8px;
+  z-index: -1;
+  border: 1px solid rgba(255, 200, 220, 0.22);
+  border-radius: 18px;
+  background-color: rgba(40, 18, 36, 0.52);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+:root[data-theme] .sidebar .head { padding-left: 20px; }
+:root[data-theme] .sidebar .search { padding: 2px 14px 10px 16px; }
+:root[data-theme] .splitter-x { background-color: transparent !important; }
+
+/* Pill tabs. */
+:root[data-theme] .tab-bar { box-shadow: none; }
+:root[data-theme] .tab-bar .strip { align-items: center; gap: 6px; padding: 0 6px; }
+:root[data-theme] .tab-bar .strip .tab {
+  height: 30px;
+  border-radius: 999px;
+  background-image: none;
+}
+:root[data-theme] .tab-bar .strip .tab.is-active { box-shadow: inset 0 0 0 1px rgba(255, 200, 220, 0.35); }
+:root[data-theme] .tab-bar .strip .tab::before,
+:root[data-theme] .tab-bar .strip .tab::after { display: none; }
+:root[data-theme] .chip-button { border-radius: 999px; }
+
+:root[data-theme] .start .hero h1::after { color: #ffd9e7; text-shadow: 0 0 18px rgba(245, 155, 191, 0.55); }
+
+/* Animated wallpaper behind the whole app. */
+html, body {
+  background: url("https://raw.githubusercontent.com/Airandwater404/Potassium_Genshin_Themes/main/yae-miko/yae-miko.avif") center / cover fixed no-repeat, #2a1626 !important;
+}

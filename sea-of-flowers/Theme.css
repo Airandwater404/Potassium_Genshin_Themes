@@ -1,0 +1,174 @@
+/* Sea of Flowers theme for Potassium. Base theme: Dark. */
+:root[data-theme] {
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+
+  --bg-app: rgba(4, 14, 70, 0.15);
+  --bg-chrome: rgba(6, 18, 82, 0.38);
+  --bg-sidebar: rgba(6, 18, 82, 0.48);
+  --bg-editor: rgba(6, 20, 88, 0.46);
+  --bg-panel: rgba(5, 16, 76, 0.5);
+  --bg-status: rgba(4, 12, 64, 0.5);
+  --bg-elevated: rgba(10, 26, 100, 0.95);
+  --bg-input: rgba(4, 12, 60, 0.45);
+  --bg-hover: rgba(226, 230, 242, 0.08);
+  --bg-active: rgba(226, 230, 242, 0.15);
+  --border: rgba(226, 230, 242, 0.14);
+  --border-strong: rgba(226, 230, 242, 0.3);
+
+  --text: #f3f2f7;
+  --text-muted: #c1cbea;
+  --text-faint: #8392c6;
+  --row-icon: #ffe7a3;
+
+  --accent: #ffe7a3;
+  --accent-hover: #fff0c4;
+  --accent-soft: rgba(255, 231, 163, 0.18);
+  --on-accent: #10184d;
+  --tab-accent: #ffe7a3;
+  --tab-rule: transparent;
+  --tab-glyph: #ffe7a3;
+  --tab-divider-width: 0px;
+  --tab-active-bg: transparent;
+
+  --ok: #9fe7c4;
+  --warn: #ffcf6e;
+  --danger: #ff7a9a;
+  --titlebar-fg: #e2e6f2;
+  --titlebar-close-hover: #d9466a;
+  --scrollbar-thumb: rgba(226, 230, 242, 0.25);
+}
+
+/* Settings opens over everything; keep it readable over the moving wallpaper. */
+:root[data-theme] .settings-dialog {
+  background-color: rgba(6, 18, 82, 0.9) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  backdrop-filter: blur(24px) saturate(1.2);
+}
+
+:root[data-theme] .settings-dialog .settings {
+  background-color: transparent !important;
+}
+
+/* Monaco paints its own solid background; let the wallpaper through. */
+.monaco-editor,
+.monaco-editor .overflow-guard,
+.monaco-editor-background,
+.monaco-editor .margin,
+.monaco-editor .inputarea.ime-input {
+  background-color: transparent !important;
+}
+
+.monaco-editor .view-overlays .current-line,
+.monaco-editor .margin-view-overlays .current-line-margin {
+  background: rgba(255, 231, 163, 0.06) !important;
+  border: none !important;
+}
+
+.monaco-editor .line-numbers { color: #7d8bc0 !important; }
+.monaco-editor .line-numbers.active-line-number { color: #ffe7a3 !important; }
+.monaco-editor .view-lines { text-shadow: 0 1px 3px rgba(2, 8, 48, 0.85); }
+.monaco-editor .scroll-decoration { box-shadow: none !important; }
+
+/* The minimap is a canvas with a solid fill; blending drops it into the wallpaper. */
+.monaco-editor .minimap,
+.monaco-editor .minimap canvas {
+  mix-blend-mode: screen !important;
+}
+
+.monaco-editor .minimap { opacity: 0.55 !important; }
+.monaco-editor .minimap-shadow-visible { box-shadow: none !important; }
+
+/* Japanese labels next to the English ones. */
+:root[data-theme] .titlebar-title { font-size: 0 !important; }
+:root[data-theme] .titlebar-title::after {
+  content: "花 の 海 · カ リ ウ ム";
+  font-size: 13px;
+  font-family: "Yu Gothic UI", "Meiryo UI", "Segoe UI", sans-serif;
+  letter-spacing: 0.28em;
+}
+
+:root[data-theme] .sidebar .head-title { font-size: 0 !important; }
+:root[data-theme] .sidebar .head-title::after {
+  content: "花束";
+  font-size: 14px;
+  font-family: "Yu Gothic UI", "Meiryo UI", "Segoe UI", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+:root[data-theme] .sidebar .section:has(+ .section) .section-title::after { content: " · スクリプト"; letter-spacing: 0.04em; }
+:root[data-theme] .sidebar .section + .section .section-title::after { content: " · 自動実行"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(1)::after { content: "　出力"; letter-spacing: 0.04em; }
+:root[data-theme] .console .tabs .tab:nth-child(2)::after { content: "　問題"; letter-spacing: 0.04em; }
+
+:root[data-theme] .start .hero h1 { font-size: 0 !important; line-height: 1 !important; }
+:root[data-theme] .start .hero h1::before {
+  content: "SEA OF FLOWERS · 花海";
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  color: var(--accent);
+}
+
+:root[data-theme] .start .hero h1::after {
+  content: "花の海";
+  font-family: "Yu Gothic UI", "Meiryo UI", "Segoe UI", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+:root[data-theme] .start .links h2::after { content: "　始める"; }
+:root[data-theme] .start .recent h2::after { content: "　最近"; }
+:root[data-theme] .start .tip h2::after { content: "　今日のヒント"; }
+
+/* A vertical line of text at the foot of the explorer. */
+:root[data-theme] .sidebar { position: relative; isolation: isolate; }
+:root[data-theme] .sidebar::after {
+  content: "流れ星に願いを";
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  writing-mode: vertical-rl;
+  font-family: "Yu Gothic UI", "Meiryo UI", "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  color: rgba(255, 231, 163, 0.38);
+  pointer-events: none;
+}
+
+/* No breadcrumb bar: more room for code. */
+:root[data-theme] .editor-area .toolbar { display: none; }
+
+/* Monospace, spaced-out labels. */
+:root[data-theme] .tab-bar .strip .tab,
+:root[data-theme] .sidebar .section-title,
+:root[data-theme] .console .tabs .tab,
+:root[data-theme] .status {
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+}
+:root[data-theme] .tab-bar .strip .tab { font-size: 12.5px; }
+
+/* Shooting-star underline on the active tab. */
+:root[data-theme] .tab-bar .strip .tab { background-image: none; }
+:root[data-theme] .tab-bar .strip .tab::before,
+:root[data-theme] .tab-bar .strip .tab::after { display: none; }
+:root[data-theme] .tab-bar .strip .tab.is-active {
+  background-image: linear-gradient(90deg, transparent, rgba(255, 231, 163, 0.25) 40%, #ffe7a3 85%, #ffffff);
+  background-size: 100% 2px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+:root[data-theme] .start .hero h1::after { font-weight: 300; letter-spacing: 0.3em; color: #f3f2f7; text-shadow: 0 0 22px rgba(176, 190, 255, 0.6); }
+
+/* Animated wallpaper behind the whole app. */
+html, body {
+  background: linear-gradient(to bottom, rgba(4, 12, 64, 0) 35%, rgba(4, 12, 64, 0.55)), url("https://raw.githubusercontent.com/Airandwater404/Potassium_Genshin_Themes/main/sea-of-flowers/sea-of-flowers.avif") center / cover fixed no-repeat, #061a7a !important;
+}
